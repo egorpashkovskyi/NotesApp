@@ -1,0 +1,19 @@
+body {
+  font-size: 22px;
+  /* Not Allowed to embed Zekton */
+  font-family: "Zekton", "Arial";
+  background: #EFEEEB;
+  color: #003D3D;
+}
+
+button, input {
+  font: inherit;
+}
+
+h1{
+  border: 2px dashed darkred;
+}
+
+p{
+  color: #003D3D;
+}

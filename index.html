@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+      <link rel="stylesheet" href="css/style.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <title>My Notes App</title>
+      <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    </head>
+
+    <body>
+      <header>
+        <h1>Dashboard</h1>
+        <h1>User</h1>
+      </header>
+
+      <main>
+        <div>
+          <h2 class="noteTitle">My Notes App</h2>
+
+          <form method="dialog">
+            <label for="noteTitle">Note name</label><br>
+            <input type="text" id="noteTitle" name="noteTitle" value="Note Title" required><br>
+            <label for="noteContent" id="noteContentText">Note contents</label><br>
+            <input type="text" id="noteContent" name="noteContent" value="Description"><br>
+
+            <input type="submit" id="submitButton" value="Add">
+
+          </form>
+        </div>
+
+        <div id="noteContainer">
+          <h2 id="noteName">Note Name</h2>
+          <p id="noteDescription">Note Description</p>
+        </div>
+      </main>
+
+      <cite>
+        Pashkovskyi Yehor
+      </cite>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
