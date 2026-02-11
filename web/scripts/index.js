@@ -1,6 +1,3 @@
-const noteTitle = document.getElementById("title");
-const noteDescription = document.getElementById("title");
-
 let notes = [];
 
 
