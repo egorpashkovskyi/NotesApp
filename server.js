@@ -5,7 +5,8 @@ const path = require('path');
 const mimeTypes = {
     '.html': 'text/html',
     '.css': 'text/css',
-    '.js': 'text/javascript'
+    '.js': 'text/javascript',
+    '.png': 'image/png'
 };
 
 const server = http.createServer((req, res) => {
@@ -25,9 +26,7 @@ const server = http.createServer((req, res) => {
             res.end('404 Not Found');
             return;
         }
-        console.log(ext)
         res.writeHead(200, {'Content-Type': mimeTypes[ext]});
-
         res.end(content);
     })
 });
