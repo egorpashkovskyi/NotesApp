@@ -5,6 +5,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{542706A8-2485-45F8-8F32-96F0157175B5}|database\\database.csproj|c:\\myprojects\\projects\\notesapp\\database\\database\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{542706A8-2485-45F8-8F32-96F0157175B5}|database\\database.csproj|solutionrelative:database\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542706A8-2485-45F8-8F32-96F0157175B5}|database\\database.csproj|c:\\myprojects\\projects\\notesapp\\database\\database\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542706A8-2485-45F8-8F32-96F0157175B5}|database\\database.csproj|solutionrelative:database\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542706A8-2485-45F8-8F32-96F0157175B5}|database\\database.csproj|c:\\myprojects\\projects\\notesapp\\database\\database\\database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{542706A8-2485-45F8-8F32-96F0157175B5}|database\\database.csproj|solutionrelative:database\\database.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{542706A8-2485-45F8-8F32-96F0157175B5}|database\\database.csproj|c:\\myprojects\\projects\\notesapp\\database\\database\\migrations\\20260223111619_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{542706A8-2485-45F8-8F32-96F0157175B5}|database\\database.csproj|solutionrelative:database\\migrations\\20260223111619_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +26,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "20260223111619_InitialCreate.cs",
+              "DocumentMoniker": "C:\\MyProjects\\Projects\\NotesApp\\database\\database\\Migrations\\20260223111619_InitialCreate.cs",
+              "RelativeDocumentMoniker": "database\\Migrations\\20260223111619_InitialCreate.cs",
+              "ToolTip": "C:\\MyProjects\\Projects\\NotesApp\\database\\database\\Migrations\\20260223111619_InitialCreate.cs",
+              "RelativeToolTip": "database\\Migrations\\20260223111619_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T11:16:20.138Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "database.csproj",
+              "DocumentMoniker": "C:\\MyProjects\\Projects\\NotesApp\\database\\database\\database.csproj",
+              "RelativeDocumentMoniker": "database\\database.csproj",
+              "ToolTip": "C:\\MyProjects\\Projects\\NotesApp\\database\\database\\database.csproj",
+              "RelativeToolTip": "database\\database.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-23T11:15:26.938Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Model.cs",
+              "DocumentMoniker": "C:\\MyProjects\\Projects\\NotesApp\\database\\database\\Model.cs",
+              "RelativeDocumentMoniker": "database\\Model.cs",
+              "ToolTip": "C:\\MyProjects\\Projects\\NotesApp\\database\\database\\Model.cs",
+              "RelativeToolTip": "database\\Model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-23T11:14:58.143Z"
             },
             {
               "$type": "Document",
@@ -28,9 +76,9 @@
               "RelativeDocumentMoniker": "database\\Program.cs",
               "ToolTip": "C:\\MyProjects\\Projects\\NotesApp\\database\\database\\Program.cs",
               "RelativeToolTip": "database\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T09:27:09.035Z",
+              "WhenOpened": "2026-02-23T11:14:56.873Z",
               "EditorCaption": ""
             }
           ]
