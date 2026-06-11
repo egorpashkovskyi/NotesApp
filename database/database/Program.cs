@@ -9,7 +9,13 @@ namespace database
   {
     static void Main(string[] args)
     {
-      AddNote("It", " Works");
+      using NotesContext db = new NotesContext();
+
+      foreach(var note in db.Notes.OrderBy(note => note.NoteId).ToArray())
+      {
+        Console.WriteLine(note.NoteId);
+      }
+      
       for (int i = 0; i < 1000; i++)
       {
         SimpleListenerExample(["http://localhost:5000/"]);
@@ -28,7 +34,25 @@ namespace database
 
     public static void RemoveNote(int id)
     {
+      using NotesContext db = new NotesContext();
 
+      IQueryable query = db.Notes
+        .Where(note => note.NoteId == id);
+
+      Note? noteToDelete = null;
+
+      foreach (Note note in query)
+      {
+        noteToDelete = note;
+      }
+
+      if (noteToDelete == null) { 
+        Console.WriteLine("No Note");
+        return;
+      }
+
+      db.Remove(noteToDelete);
+      db.SaveChanges();
     }
 
     public static Note[] GetNotes()
@@ -70,17 +94,45 @@ namespace database
       // Obtain a response object.
       HttpListenerResponse response = context.Response;
       // Construct a response.
-      Note[] notes = GetNotes();
-      string responseNotes = JsonSerializer.Serialize(notes);
-      //string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
-      string responseString = responseNotes;
+      string responseString = "";
+
+      Console.WriteLine(request.Url.AbsolutePath);
+      if(request.Url.AbsolutePath == "/remove")
+      {
+        string strmContents;
+        Int32 counter, strLen, strRead;
+        // Create a Stream object.
+        // Find number of bytes in stream.
+        strLen = Convert.ToInt32(request.InputStream.Length);
+        // Create a byte array.
+        byte[] strArr = new byte[strLen];
+        // Read stream into byte array.
+        strRead = request.InputStream.Read(strArr, 0, strLen);
+
+        // Convert byte array to a text string.
+        strmContents = "";
+        for (counter = 0; counter < strLen; counter++)
+        {
+          strmContents = strmContents + strArr[counter].ToString();
+        }
+
+        Console.WriteLine(strmContents);
+        RemoveNote(Convert.ToInt32(strmContents));
+      }
+      else
+      {
+        Note[] notes = GetNotes();
+        string responseNotes = JsonSerializer.Serialize(notes);
+        //string responseString = "<HTML><BODY> Hello world!</BODY></HTML>";
+        responseString = responseNotes;
+      }
       byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString);
       // Get a response stream and write the response to it.
       response.ContentLength64 = buffer.Length;
       System.IO.Stream output = response.OutputStream;
       output.Write(buffer, 0, buffer.Length);
       // You must close the output stream.
-      output.Close();
+      output.Close(); 
       listener.Stop();
     }
   }
